@@ -1,4 +1,4 @@
-package com.android.app.abulbiryani
+package com.android.app.abulbiryani.profile
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Column
@@ -17,9 +17,11 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
+import androidx.navigation.NavController
+import com.android.app.abulbiryani.R
 
 @Composable
-fun Profile(paddingValues: PaddingValues) {
+fun Profile(paddingValues: PaddingValues, navController: NavController) {
 
     Column(modifier = Modifier.padding(paddingValues).fillMaxWidth().fillMaxHeight()) {
         Row(verticalAlignment = Alignment.CenterVertically) {

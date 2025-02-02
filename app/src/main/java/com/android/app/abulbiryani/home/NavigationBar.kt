@@ -1,4 +1,4 @@
-package com.android.app.abulbiryani
+package com.android.app.abulbiryani.home
 
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Fastfood

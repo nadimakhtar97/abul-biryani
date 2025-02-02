@@ -2,6 +2,8 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+    alias(libs.plugins.hilt.android)
+    kotlin("kapt") version "2.1.10"
 }
 
 android {
@@ -40,7 +42,6 @@ android {
 }
 
 dependencies {
-
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
@@ -59,6 +60,9 @@ dependencies {
     implementation(libs.material3)
     implementation(libs.androidx.material3.windowSizeClass)
     implementation(libs.androidx.material3.adaptive.navigation.suite)
-    // https://mvnrepository.com/artifact/androidx.compose.material/material-icons-extended
     implementation(libs.androidx.material.icons.extended)
+    implementation(libs.androidx.navigation.compose)
+    implementation(libs.hilt.android)
+    kapt(libs.hilt.android.compiler)
+
 }

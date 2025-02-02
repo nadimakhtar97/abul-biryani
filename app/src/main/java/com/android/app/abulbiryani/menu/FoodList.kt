@@ -1,4 +1,4 @@
-package com.android.app.abulbiryani
+package com.android.app.abulbiryani.menu
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
@@ -29,10 +29,12 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
+import androidx.navigation.NavController
+import com.android.app.abulbiryani.R
 import com.android.app.abulbiryani.model.FoodItem
 
 @Composable
-fun FoodList(contentPadding: PaddingValues) {
+fun FoodList(contentPadding: PaddingValues, navController: NavController) {
     LazyColumn(
         modifier = Modifier.padding(paddingValues = contentPadding),
         content = {
